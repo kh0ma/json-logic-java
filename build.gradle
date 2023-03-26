@@ -4,7 +4,7 @@ plugins {
   id "signing"
 }
 
-group "io.github.jamsesso"
+group "io.github.kh0ma"
 version "1.0.8-SNAPSHOT"
 
 sourceCompatibility = 1.8
@@ -54,19 +54,19 @@ uploadArchives {
         name "json-logic-java"
         artifactId "json-logic-java"
         packaging "jar"
-        description "A native Java implementation of the json-logic project"
-        url "https://github.com/jamsesso/json-logic-java"
+        description "A native Java implementation of the json-logic project. Fork of https://github.com/jamsesso/json-logic-java"
+        url "https://github.com/kh0ma/json-logic-java"
 
         scm {
-          connection "scm:git@github.com:jamsesso/json-logic-java.git"
-          developerConnection "scm:git@github.com:jamsesso/json-logic-java.git"
-          url "https://github.com/jamsesso/json-logic-java.git"
+          connection "scm:git@github.com:kh0ma/json-logic-java.git"
+          developerConnection "scm:git@github.com:kh0ma/json-logic-java.git"
+          url "https://github.com/kh0ma/json-logic-java.git"
         }
 
         licenses {
           license {
             name "MIT License"
-            url "https://github.com/jamsesso/json-logic-java/blob/master/LICENSE"
+            url "https://github.com/kh0ma/json-logic-java/blob/main/LICENSE"
           }
         }
 
@@ -75,6 +75,11 @@ uploadArchives {
             id "jamsesso"
             name "Sam Jesso"
             email "samuel.jesso@gmail.com"
+          }
+          developer {
+            id "kh0ma"
+            name "Oleksandr Khomenko"
+            email "khomenko.dp@gmail.com"
           }
         }
       }

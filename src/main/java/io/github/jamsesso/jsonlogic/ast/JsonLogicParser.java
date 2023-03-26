@@ -64,7 +64,8 @@ public final class JsonLogicParser {
     JsonObject object = root.getAsJsonObject();
 
     if (object.keySet().size() != 1) {
-      throw new JsonLogicParseException("objects must have exactly 1 key defined, found " + object.keySet().size());
+      // Return an object as is, w/o processing. Follow the same as JS implementation does.
+      return new JsonLogicString(object.toString());
     }
 
     String key = object.keySet().stream().findAny().get();
